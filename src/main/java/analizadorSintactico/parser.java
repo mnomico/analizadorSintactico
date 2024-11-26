@@ -4,7 +4,7 @@
 // Tue Nov 26 08:22:40 GMT-03:00 2024
 //----------------------------------------------------
 
-package analizadorLexico;
+package analizadorSintactico;
 
 import vista.ErrorSintactico;
 import java_cup.runtime.*;
@@ -14,7 +14,7 @@ import java.lang.*;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
-import jflex.core.sym;
+
 import vista.VentanaPrincipal;
 
 /** CUP v0.11a beta 20060608 generated parser.

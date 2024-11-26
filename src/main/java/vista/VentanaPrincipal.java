@@ -1,7 +1,7 @@
 package vista;
 
-import analizadorLexico.Lexico;
-import analizadorLexico.parser;
+import analizadorSintactico.Lexico;
+import analizadorSintactico.parser;
 
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
@@ -14,10 +14,8 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.*;
 import javax.swing.event.CaretEvent;
-import javax.swing.event.CaretListener;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
-import javax.swing.text.BadLocationException;
 
 public class VentanaPrincipal extends javax.swing.JFrame {
 
@@ -27,13 +25,13 @@ public class VentanaPrincipal extends javax.swing.JFrame {
      * Creates new form TextFrame
      */
     private boolean modificado = false;
-    private String tituloVentana = "Nuevo archivo - Analizador Léxico";
+    private String tituloVentana = "Nuevo archivo - Analizador Sintáctico";
     private JFileChooser archivoActual = new JFileChooser();
     
     public VentanaPrincipal() {
         initComponents();
         setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
-        setTitle("Nuevo archivo - Analizador Léxico");
+        setTitle("Nuevo archivo - Analizador Sintáctico");
         setVisible(true);
         
         addWindowListener(new WindowAdapter(){
@@ -274,7 +272,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
                 buffer = new PrintWriter(archivoActual.getSelectedFile());
                 buffer.print(panelTexto.getText());
                 buffer.close();
-                tituloVentana = archivoActual.getSelectedFile().getName() + " - Analizador Léxico";
+                tituloVentana = archivoActual.getSelectedFile().getName() + " - Analizador Sintáctico";
                 setTitle(tituloVentana);
                 modificado = false;
             } catch (FileNotFoundException ex) {
@@ -330,7 +328,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     private void nuevoArchivo() {
         panelTexto.setText("");
         archivoActual = new JFileChooser();
-        tituloVentana = "Nuevo archivo - Analizador Léxico";
+        tituloVentana = "Nuevo archivo - Analizador Sintáctico";
         setTitle(tituloVentana);
         modificado = false;
     }
@@ -345,7 +343,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
                     buffer += archivo.nextLine() + "\n";
                 }
                 panelTexto.setText(buffer);
-                tituloVentana = archivoActual.getSelectedFile().getName() + " - Analizador Léxico";
+                tituloVentana = archivoActual.getSelectedFile().getName() + " - Analizador Sintáctico";
                 setTitle(tituloVentana);
                 modificado = false;
             } catch (FileNotFoundException ex){
@@ -361,7 +359,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
                 PrintWriter buffer = new PrintWriter(archivoActual.getSelectedFile());
                 buffer.print(panelTexto.getText());
                 buffer.close();
-                tituloVentana = archivoActual.getSelectedFile().getName() + " - Analizador Léxico";
+                tituloVentana = archivoActual.getSelectedFile().getName() + " - Analizador Sintáctico";
                 setTitle(tituloVentana);
                 modificado = false;
                 return 0;
@@ -374,7 +372,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     
     private int popupCambios(){
         Object [] opciones = {"Si", "No", "Cancelar"};
-        return JOptionPane.showOptionDialog(null, "Hay cambios sin guardar. ¿Deseas guardarlos?", "Analizador Léxico", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, null, opciones, opciones[0]);
+        return JOptionPane.showOptionDialog(null, "Hay cambios sin guardar. ¿Deseas guardarlos?", "Analizador Sintáctico", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, null, opciones, opciones[0]);
     }
     
     private int cerrarPrograma(){

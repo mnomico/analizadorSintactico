@@ -1,4 +1,4 @@
-package analizadorLexico;
+package analizadorSintactico;
 import vista.ErrorSintactico;
 import java_cup.runtime.*;
 import java.io.File;

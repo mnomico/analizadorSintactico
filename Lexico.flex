@@ -1,4 +1,4 @@
-package analizadorLexico;
+package analizadorSintactico;
 import java_cup.runtime.*;
 import java.util.*;
 import java.lang.*;

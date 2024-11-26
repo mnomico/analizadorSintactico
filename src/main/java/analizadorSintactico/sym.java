@@ -4,7 +4,7 @@
 // Tue Nov 26 08:22:40 GMT-03:00 2024
 //----------------------------------------------------
 
-package analizadorLexico;
+package analizadorSintactico;
 
 /** CUP generated class containing symbol constants. */
 public class sym {

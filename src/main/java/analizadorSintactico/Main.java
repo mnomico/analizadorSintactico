@@ -1,4 +1,4 @@
-package analizadorLexico;
+package analizadorSintactico;
 import java.io.FileNotFoundException;
 import vista.VentanaPrincipal;
 
