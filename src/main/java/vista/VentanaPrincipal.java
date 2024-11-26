@@ -33,6 +33,8 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
         setTitle("Nuevo archivo - Analizador Sintáctico");
         setVisible(true);
+        setSize(1000,540);
+        setResizable(false);
         
         addWindowListener(new WindowAdapter(){
             @Override
