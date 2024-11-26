@@ -1,4 +1,4 @@
-# Analizador léxico
+# Analizador sintáctico
 ### Para descargar el ejecutable, [acceder aquí](https://github.com/mnomico/analizadorLexico/releases/tag/release) y hacer click en **analizadorSintactico.jar**
 
 ## Modo de uso
