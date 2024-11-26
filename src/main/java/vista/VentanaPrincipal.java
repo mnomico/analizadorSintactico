@@ -19,7 +19,7 @@ import javax.swing.event.DocumentListener;
 
 public class VentanaPrincipal extends javax.swing.JFrame {
 
-    public static StringBuilder je = new StringBuilder();
+    public static StringBuilder textoConsola = new StringBuilder();
     public static boolean error = false;
     /**
      * Creates new form TextFrame
@@ -243,10 +243,10 @@ public class VentanaPrincipal extends javax.swing.JFrame {
             parser sintactico = new parser(lexer);
             sintactico.parse();
             if (error){
-                consola.setText(je.toString());
+                consola.setText(textoConsola.toString());
             }else {
-                consola.setText(je.toString());
-                je=new StringBuilder();}
+                consola.setText(textoConsola.toString());
+                textoConsola =new StringBuilder();}
 
         } catch (FileNotFoundException ex) {
             Logger.getLogger(VentanaPrincipal.class.getName()).log(Level.SEVERE, null, ex);
