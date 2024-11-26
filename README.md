@@ -1,5 +1,5 @@
 # Analizador sintáctico
-### Para descargar el ejecutable, [acceder aquí](https://github.com/mnomico/analizadorLexico/releases/tag/release) y hacer click en **analizadorSintactico.jar**
+### Para descargar el ejecutable, [acceder aquí](https://github.com/mnomico/analizadorSintactico/releases/tag/release) y hacer click en **analizadorSintactico.jar**
 
 ## Modo de uso
 - Para analizar un texto, primero escriba en el área de texto o bien abra un archivo desde Archivo -> Abrir (Ctrl+A)  
