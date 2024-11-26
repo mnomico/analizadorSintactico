@@ -112,6 +112,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         jToolBar1.setBorder(null);
         jToolBar1.setRollover(true);
         jToolBar1.setFocusable(false);
+        jToolBar1.setEnabled(false);
 
         lnCol.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lnCol.setText(" Ln 1  Col 1 ");
